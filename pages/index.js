@@ -3,28 +3,42 @@ import Footer from "../src/components/commons/Footer";
 import Text from "../src/components/foundation/Text";
 import { Button } from "../src/components/commons/Button";
 import { Grid } from "../src/components/foundation/layout/Grid";
+import { Box } from "../src/components/foundation/layout/Box";
 
 export default function Home() {
   return (
-    <div
-      style={{
-        flex: "1",
-        display: "flex",
-        flexWrap: "wrap",
-        flexDirection: "column",
-        justifyContent: "space-between",
-      }}
+    <Box
+      flex={1}
+      display="flex"
+      flexWrap="wrap"
+      flexDirection="column"
+      justifyContent="space-between"
+      backgroundImage="url(/images/bubbles.svg)"
+      backgroundRepeat="no-repeat"
+      backgroundPosition="bottom right"
     >
       <Menu />
 
-      <Grid.Container>
+      <Grid.Container
+        marginTop={{
+          xs: "32px",
+          md: "75px",
+        }}
+      >
         <Grid.Row>
-          <Grid.Col offset={{ xs: 0, md: 1 }} value={{ xs: 12, md: 5 }}>
+          <Grid.Col
+            offset={{ xs: 0, md: 1 }}
+            value={{ xs: 12, md: 5 }}
+            display="flex"
+            alignItems="flex-start"
+            justifyContent="center"
+            flexDirection="column"
+          >
             <Text
               variant="title"
               tag="h1"
               color="tertiary.main"
-              textAlign={{ sm: "center", md: "left" }}
+              textAlign={{ xs: "center", md: "left" }}
             >
               Compartilhe momentos e conecte-se com amigos
             </Text>
@@ -33,9 +47,10 @@ export default function Home() {
               variant="paragraph1"
               tag="p"
               color="tertiary.light"
-              textAlign={{ sm: "center", md: "left" }}
+              textAlign={{ xs: "center", md: "left" }}
             >
-              Lorem Ipsum lorem ipsum lorem ipsum
+              Lorem Ipsum lorem ipsum lorem ipsumLorem Ipsum lorem ipsum lorem
+              ipsumLorem Ipsum lorem ipsum lorem ipsum
             </Text>
 
             <Button
@@ -59,6 +74,6 @@ export default function Home() {
       </Grid.Container>
 
       <Footer />
-    </div>
+    </Box>
   );
 }

@@ -1,19 +1,19 @@
-import React from "react";
-import styled, { css } from "styled-components";
-import PropTypes from "prop-types";
-import get from "lodash/get";
-import { propToStyle } from "../../../theme/utils/propToStyle";
+import React from 'react';
+import styled from 'styled-components';
+import PropTypes from 'prop-types';
+import get from 'lodash/get';
+import { propToStyle } from '../../../theme/utils/propToStyle';
 
 const TextBase = styled.span`
-  ${(props) => {
-    return get(props.theme.typographyVariants, props.variant);
-  }}
+  ${(props) => get(props.theme.typographyVariants, props.variant)}
 
-  ${propToStyle("textAlign")}
+  ${propToStyle('textAlign')}
 `;
 
+// eslint-disable-next-line object-curly-newline
 export default function Text({ tag, variant, children, ...props }) {
   return (
+    // eslint-disable-next-line react/jsx-props-no-spreading
     <TextBase as={tag} variant={variant} {...props}>
       {children}
     </TextBase>
@@ -21,12 +21,12 @@ export default function Text({ tag, variant, children, ...props }) {
 }
 
 Text.propTypes = {
-  tag: PropTypes.string.isRequired,
-  variant: PropTypes.string.isRequired,
+  tag: PropTypes.string,
+  variant: PropTypes.string,
   children: PropTypes.node.isRequired,
 };
 
 Text.defaultProps = {
-  tag: "span",
-  variant: "paragraph1",
+  tag: 'span',
+  variant: 'paragraph1',
 };

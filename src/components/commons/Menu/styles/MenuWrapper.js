@@ -1,8 +1,9 @@
-import styled, { css } from "styled-components";
-import { breakpointsMedia } from "../../../../theme/utils/breakpointsMedia";
+/* eslint-disable indent */
+import styled, { css } from 'styled-components';
+import { breakpointsMedia } from '../../../../theme/utils/breakpointsMedia';
 
 export const MenuWrapper = styled.nav`
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
   display: flex;
   align-items: center;
   justify-content: space-between;

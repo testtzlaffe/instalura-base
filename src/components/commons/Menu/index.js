@@ -1,22 +1,22 @@
-import React from "react";
-import { Logo } from "../../../theme/Logo";
-import Text from "../../foundation/Text";
-import { Button } from "../Button";
-import { MenuWrapper } from "./styles/MenuWrapper";
+import React from 'react';
+import { Logo } from '../../../theme/Logo';
+import Text from '../../foundation/Text';
+import { Button } from '../Button';
+import { MenuWrapper } from './styles/MenuWrapper';
 
 export default function Menu() {
   const links = [
     {
-      texto: "Home",
-      url: "/",
+      texto: 'Home',
+      url: '/',
     },
     {
-      texto: "Perguntas frequentes",
-      url: "/faq",
+      texto: 'Perguntas frequentes',
+      url: '/faq',
     },
     {
-      texto: "Sobre",
-      url: "/sobre",
+      texto: 'Sobre',
+      url: '/sobre',
     },
   ];
   return (

@@ -1,9 +1,10 @@
-import Menu from "../src/components/commons/Menu";
-import Footer from "../src/components/commons/Footer";
-import Text from "../src/components/foundation/Text";
-import { Button } from "../src/components/commons/Button";
-import { Grid } from "../src/components/foundation/layout/Grid";
-import { Box } from "../src/components/foundation/layout/Box";
+import React from 'react';
+import Menu from '../src/components/commons/Menu';
+import Footer from '../src/components/commons/Footer';
+import Text from '../src/components/foundation/Text';
+import { Button } from '../src/components/commons/Button';
+import { Grid } from '../src/components/foundation/layout/Grid';
+import { Box } from '../src/components/foundation/layout/Box';
 
 export default function Home() {
   return (
@@ -21,8 +22,8 @@ export default function Home() {
 
       <Grid.Container
         marginTop={{
-          xs: "32px",
-          md: "75px",
+          xs: '32px',
+          md: '75px',
         }}
       >
         <Grid.Row>
@@ -38,7 +39,7 @@ export default function Home() {
               variant="title"
               tag="h1"
               color="tertiary.main"
-              textAlign={{ xs: "center", md: "left" }}
+              textAlign={{ xs: 'center', md: 'left' }}
             >
               Compartilhe momentos e conecte-se com amigos
             </Text>
@@ -47,7 +48,7 @@ export default function Home() {
               variant="paragraph1"
               tag="p"
               color="tertiary.light"
-              textAlign={{ xs: "center", md: "left" }}
+              textAlign={{ xs: 'center', md: 'left' }}
             >
               Lorem Ipsum lorem ipsum lorem ipsumLorem Ipsum lorem ipsum lorem
               ipsumLorem Ipsum lorem ipsum lorem ipsum
@@ -55,8 +56,8 @@ export default function Home() {
 
             <Button
               margin={{
-                xs: "auto",
-                md: "initial",
+                xs: 'auto',
+                md: 'initial',
               }}
               display="block"
               variant="primary.main"
@@ -66,7 +67,8 @@ export default function Home() {
           </Grid.Col>
           <Grid.Col value={{ xs: 12, md: 6 }}>
             <img
-              style={{ display: "block", margin: "auto" }}
+              alt="imagem de smartphones"
+              style={{ display: 'block', margin: 'auto' }}
               src="https://bootcamp-alura-01-git-modulo01.omariosouto.vercel.app/images/phones.png"
             />
           </Grid.Col>

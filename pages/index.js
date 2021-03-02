@@ -27,12 +27,15 @@ export default function Home() {
           setIsModalOpen(false);
         }}
       >
-        {(propsDoModal) => {
-          // eslint-disable-next-line react/jsx-props-no-spreading
-          <Box backgroundColor="white" {...propsDoModal}>
-            Nosso modal
-          </Box>;
-        }}
+        {(propsDoModal) => (
+          <Box
+            backgroundColor="white"
+            // eslint-disable-next-line react/jsx-props-no-spreading
+            {...propsDoModal}
+          >
+            <div>Nosso conteúdo pro modal</div>
+          </Box>
+        )}
       </Modal>
 
       <Menu />

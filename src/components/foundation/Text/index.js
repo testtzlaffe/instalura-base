@@ -6,6 +6,7 @@ import { propToStyle } from '../../../theme/utils/propToStyle';
 
 const TextBase = styled.span`
   ${(props) => get(props.theme.typographyVariants, props.variant)}
+  color: ${(props) => get(props.theme, `colors.${props.color}.color`)}
 
   ${propToStyle('textAlign')}
 `;
@@ -23,10 +24,11 @@ export default function Text({ tag, variant, children, ...props }) {
 Text.propTypes = {
   tag: PropTypes.string,
   variant: PropTypes.string,
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
 };
 
 Text.defaultProps = {
   tag: 'span',
   variant: 'paragraph1',
+  children: null,
 };

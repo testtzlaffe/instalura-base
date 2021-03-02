@@ -39,6 +39,18 @@ export const Button = styled.button`
       md: theme.typographyVariants.paragraph1,
     })}
 
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.2;
+  }
+
+  ${({ fullWidth }) =>
+    // eslint-disable-next-line operator-linebreak
+    fullWidth &&
+    css`
+      width: 100%;
+    `}
+
   ${propToStyle('margin')}
   ${propToStyle('display')}
 `;

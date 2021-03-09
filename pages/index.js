@@ -31,7 +31,7 @@ export default function Home() {
         {(propsDoModal) => <FormCadastro propsDoModal={propsDoModal} />}
       </Modal>
 
-      <Menu />
+      <Menu onClick={() => setIsModalOpen(true)} />
 
       <Grid.Container
         marginTop={{

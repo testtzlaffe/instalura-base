@@ -41,6 +41,9 @@ const Row = styled.div`
   ${propToStyle('marginRight')}
   ${propToStyle('justifyContent')}
   ${propToStyle('border')}
+  ${propToStyle('marginTop')}
+  ${propToStyle('marginBottom')}
+  ${propToStyle('flexDirection')}
 `;
 
 const Col = styled.div`
@@ -147,6 +150,7 @@ const Col = styled.div`
   ${propToStyle('paddingRight')}
   ${propToStyle('border')}
   ${propToStyle('flexGrow')}
+  ${propToStyle('order')}
 `;
 
 export const Grid = {
